@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshaya's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Lexend+Zetta:wght@400..900&family=Eagle+Lake&family=Lavishly+Yours&family=Orbitron:wght@400..900&family=Sour+Gummy:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+
+    <div class="page-wrapper d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRight">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarRight">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">Home/</a></li>
+        <li class="nav-item"><a class="nav-link" href="./public/about-me.html">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="./public/for-recruiters.html">For Recruiters</a></li>
+        <li class="nav-item"><a class="nav-link" href="./public/contact-me.html">Contact me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Name + Photo -->
+<div class="container mt-4 name-photo">
+  <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
+    <div class="col-md-6 mt-4 mt-md-0">
+      <h1 class="eagle-lake-regular">Hi, I'm</h1>
+      <p class="lavishly-yours-regular">Akshaya.</p><br>
+      <p class="short-intro">A passionate student developer.</p>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <img src="./assets/images/circle_profile-picture_image.png" class="img-fluid proff-pic" alt="Akshaya's photo" />
+    </div>
+  </div>
+</div>
+<!-- Section Cards -->
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- About Me -->
+    <div class="col">
+      <div class="card h-100 custom-card text-center d-flex flex-column justify-content-center">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title libre-font fw-bold">About Me</h5>
+            <h6 class="card-subtitle mb-3 text-muted">Learn More</h6>
+            <p class="card-text libre-font">Who I am, what I do, and what drives me as a developer.</p>
+          </div>
+          <a href="./public/about-me.html" class="theme-btn mt-4 mx-auto">Go to About</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recruiters -->
+    <div class="col">
+      <div class="card h-100 custom-card text-center d-flex flex-column justify-content-center">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title libre-font fw-bold">For Recruiters</h5>
+            <h6 class="card-subtitle mb-3 text-muted">Resume & Projects</h6>
+            <p class="card-text libre-font">Explore my resume, skills, and the projects I’ve worked on.</p>
+          </div>
+          <a href="./public/for-recruiters.html" class="theme-btn mt-4 mx-auto">Recruiters Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="col">
+      <div class="card h-100 custom-card text-center d-flex flex-column justify-content-center">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title libre-font fw-bold">Contact Me</h5>
+            <h6 class="card-subtitle mb-3 text-muted">Let’s Connect</h6>
+            <p class="card-text libre-font">Have questions or opportunities? Get in touch with me here.</p>
+          </div>
+          <a href="./public/contact-me.html" class="theme-btn mt-4 mx-auto">Contact Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+<footer class="footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-top">
+        
+        <div class="footer-left mb-2 mb-md-0 text-center text-md-start">
+          <span class="footer-text">© 2025 Akshaya Ramalingam Siraimeetan</span>
+        </div>
+        
+        <ul class="nav list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0">
+          <li><a class="footer-link" href="https://github.com/akshayaRamalingamSiraimeetan">GitHub</a></li>
+          <li><a class="footer-link" href="https://www.linkedin.com/in/akshaya-ramalingam-siraimeetan-23453928a/">LinkedIn</a></li>
+          <li><a class="footer-link" href="mailto:akshayasirai06@gmail.com">Mail</a></li>
+        </ul>
+
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

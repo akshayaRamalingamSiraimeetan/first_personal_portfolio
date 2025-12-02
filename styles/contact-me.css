@@ -1,0 +1,225 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Navbar === */
+.custom-navbar {
+  background: transparent;
+  padding: 1.5rem 2rem;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  font-family: 'Eagle Lake', cursive;
+  font-size: 7rem;
+  text-decoration: none;
+  color: #2b0a3d !important;
+  padding: 2rem 5rem;
+  border-radius: 1.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: #4b2e83 !important;
+}
+
+/* Navbar toggler (hamburger) */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2827, 27, 27, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  filter: brightness(0.2);
+}
+
+/* Navbar collapse background and layout on small screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
+
+/* === Contact form container === */
+.lavishly-heading {
+  font-family: 'Lavishly Yours', cursive;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4b2e83;
+}
+.contact-container {
+  max-width: 700px;
+  margin: 120px auto 40px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: input fields, buttons */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  margin-bottom: 1rem;
+  font-family: 'Libre Baskerville', serif;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  background: #4b2e83;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-family: 'Eagle Lake', cursive;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #371c5b;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ this centers the button and inputs horizontally */
+  gap: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #4b2e83, #6f42c1);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: 'Eagle Lake', cursive;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  /* No need for align-self if parent has align-items: center */
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+/* === Footer === */
+
+footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  margin-top: auto;
+  color: #190039;
+  font-family: 'Libre Baskerville', serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer-text {
+  font-weight: 500;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #23024e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #895d94;
+}
+
+/* === Main Content === */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: 120px;
+}
